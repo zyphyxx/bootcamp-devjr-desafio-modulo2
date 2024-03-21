@@ -1,18 +1,16 @@
 body {
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        background-color: #CCCCCC;
-
        margin: 3rem;
+       width: 790px;
        
 }
 
 .container {
        background-color: #210D24 ;
        border-radius: 5px;
-
        box-shadow: 1px 3px 8px 10px rgba(0, 0, 0, 0.2);
        border-radius: 5px;
-       overflow: hidden;
 }
 .container-title {
        color: #FECD23;
@@ -30,13 +28,14 @@ body {
 }
 .container-box {
        background-color: #5D1D67;
-       margin: 1rem;
+       margin: 1.5rem;
        border-radius: 5px;
+       flex-direction: row
 }
 .container-subtitle {
        color: #ECECEB ;
        text-align: center;
-       font-size: 1.2rem;
+       font-size: 1.5rem;
        padding-bottom: 1rem;
        padding-top: 1rem;
 }
@@ -44,7 +43,7 @@ body {
        text-align: center;
 }
 input {
-       width: 70%;
+       width: 27.5rem;
        border-radius: 5px;
        height: 1.56rem;
        border: 0;
@@ -57,7 +56,8 @@ input:focus{
        display: flex;
        padding-top: 2rem;
        padding: 2rem;
-       justify-content: space-between;
+       justify-content: space-around;
+       
        
        
 }
@@ -95,10 +95,16 @@ button {
 .footer {
        color: #ECECEB;
        text-align: center;
-       padding-bottom: 1px;
+       padding-bottom: 3px;
+
 
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 790px) {
+
+       body{
+              width: 375px;
+              margin: auto;
+       }
 
        .container-cards {
               
@@ -106,22 +112,28 @@ button {
               
        }
        .cards {
-              margin-bottom: 1.5rem;
+              margin-bottom: 1rem;
        }
        .footer {
               font-size: 12px;
        }
+       input {
+
+              width: 12rem;
+       }
+       .container-text {
+
+              font-size: 0.7rem;
+              padding-bottom: 0px;
+       }
+       .container-subtitle {
+              font-size: 1.3rem;
+              
+       }
+       .container-title {
+              font-size: 3rem;
+       }
 
 
        
-}
-@media screen and (min-width: 800px) {
-
-
-       .container-cards {
-              
-              flex-direction: row;
-              justify-content:space-around;
-              
-       }
 }
